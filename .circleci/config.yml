@@ -7,4 +7,4 @@ jobs:
       - checkout
       - run: sudo pip install --upgrade pip
       - run: pip install -r requirements.txt
-      - run: python hello.py
+      - run: python name.py
