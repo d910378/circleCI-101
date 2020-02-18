@@ -2,7 +2,7 @@ version: 2
 jobs:
   one:
     docker:
-      - image: circleci/python:3.6.2-stretch-browsers
+      - image: circleci/python:3.6.2
     steps:
       - checkout
       - run: sudo pip install --upgrade pip
@@ -11,7 +11,7 @@ jobs:
       - run: python name.py
   two:
     docker:
-      - image: circleci/python:3.6.2-stretch-browsers
+      - image: circleci/python:3.6.2
     steps:
       - checkout
       - run: sudo pip install --upgrade pip
